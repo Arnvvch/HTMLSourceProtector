@@ -1,5 +1,5 @@
 {
-  "name": "OmegaLolBro/HTMLSourceProtector",
+  "name": "omegalolbro/htmlsourceprotector",
   "description": "Protect your HTML source code.",
   "type": "library",
   "license": "MIT",
@@ -16,7 +16,7 @@
   ],
   "require": {
 	"php": ">=5.0"
-  }
+  },
   "autoload": {
     "psr-4": {
       "Protector\\": "src"
@@ -24,4 +24,5 @@
 	"files": [
       "src/protector.php"
     ]
+  }
 }
