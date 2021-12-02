@@ -1,8 +1,7 @@
+<h1 style="text-align:center;">HTMLSourceProtector</h1>
 <p align="center">
   <img src="assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
 </p>
-
-<h1 allign="center">HTMLSourceProtector</h1>
 
 ## What is it?
 HTML encrypter protect web pages source code, its hard for people to decrypt the source code but it displays perfectly in a browser. No AdBlocker can read it. It encrypt on the fly and only the web browser can read it. 
