@@ -11,7 +11,7 @@ The size of the first block of code depends on the size of web page, it contains
  - Very lightweight and working on-the-fly
  
 ## How to install
- - git clone https://github.com/OmegaLolBro/HTMLSourceProtector.git
+ -composer require omegalolbro/htmlsourceprotector
 ## Usage
  - To encrypt the whole page
  ```php
