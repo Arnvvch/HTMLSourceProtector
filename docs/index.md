@@ -1,37 +1,104 @@
-## Welcome to GitHub Pages
+<h1 style="text-align:center;">HTMLSourceProtector</h1>
+<p align="center">
+  <img src="assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
+</p>
 
-You can use the [editor on GitHub](https://github.com/OmegaLolBro/HTMLSourceProtector/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## What is it?
+HTML encrypter protect web pages source code, its hard for people to decrypt the source code but it displays perfectly in a browser. No AdBlocker can read it. It encrypt on the fly and only the web browser can read it. 
+The size of the first block of code depends on the size of web page, it contains original HTML. The second block of code always stays the same length, it contains the decode function. When opened in a web browser, the original page appears to be unchanged, but the code underneath has been transformed.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Features
+ - Protect HTML code against fast cribbing copying
+ - Encode local HTML to prevent in-file searching
+ - Protect unfinished websites from Google
+ - Confuse user who click the “View Source” button :D
+ - Become part of the invisible web, hide from search engines and data miners ;)
+ - Very lightweight and working on-the-fly
+ 
+## How to install
+ - composer require omegalolbro/htmlsourceprotector
+## Usage
+ - To encrypt the whole page
+ ```php
+ <?php
+require_once 'vendor/autoload.php';
 
-### Markdown
+$html = new Html\Protector;
+$html->Encrypt();
+?>
+```
+- To encrypt a part in a page
+```php
+<?php
+require_once 'vendor/autoload.php';
+$html = new Html\Protector;
+?>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<?php $html->Encrypt(); ?>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<?php $html->EncryptionEnd(); ?>
+</body>
+</html>
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Issues
+If you come across any issues please report them [here](https://github.com/OmegaLolBro/HTMLSourceProtector/issues)
 
-### Jekyll Themes
+## Composer
+This project powered by [composer](https://getcomposer.org).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OmegaLolBro/HTMLSourceProtector/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## License
+```
+MIT License
 
-### Support or Contact
+Copyright (c) 2021 HTMLSourceProtector
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
