@@ -75,9 +75,6 @@ th, td {
 ## Issues
 If you come across any issues please report them [here](https://github.com/OmegaLolBro/HTMLSourceProtector/issues)
 
-## Composer
-This project powered by [composer](https://getcomposer.org).
-
 ## License
 ```
 MIT License
