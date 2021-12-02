@@ -1,0 +1,26 @@
+{
+  "name": "OmegaLolBro/HTMLSourceProtector",
+  "description": "Protect your HTML source code.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+     {
+         "name": "OmegaLolBro",
+         "email": "omegalolbro@yandex.com"
+     },
+	 {
+         "name": "Arnav Chotkan",
+         "email": "chotkanarnav@gmail.com"
+     }
+  ],
+  "require": {
+	"php": ">=5.0"
+  }
+  "autoload": {
+    "psr-4": {
+      "Protector\\": "src"
+    },    
+	"files": [
+      "src/protector.php"
+    ]
+}
