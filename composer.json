@@ -3,6 +3,7 @@
   "description": "Protect your HTML source code.",
   "type": "library",
   "license": "MIT",
+  "minimum-stability": "dev",
   "authors": [
      {
          "name": "OmegaLolBro",
