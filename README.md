@@ -1,4 +1,7 @@
-![Alt text](assets/logo.png?raw=true "Logo")
+<p align="center">
+  <img src="assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
+</p>
+
 ### HTMLSourceProtector
 
 ## What is it?
