@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">HTMLSourceProtector</h1>
 <p align="center">
-  <img src../assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
+  <img src="../assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
 </p>
 
 ## What is it?
