@@ -26,6 +26,6 @@
     ]
   },
   "archive": {
-    "exclude": ["/docs", "assets", "/*.md"]
+    "exclude": ["/docs", "/assets", "/*.md"]
   }
 }
