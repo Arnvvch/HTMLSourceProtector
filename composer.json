@@ -24,5 +24,8 @@
 	"files": [
       "src/protector.php"
     ]
+  },
+  "archive": {
+    "exclude": ["/docs", "/assets", "/*.md"]
   }
 }
