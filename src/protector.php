@@ -65,7 +65,7 @@ class Protector {
 	}
 
 	public function SetMeta($merge){
-		$this->meta = $this->meta + $merge;
+		$this->meta = array_merge($this->meta, $merge);
 	}	
 
 	public function SetHead($h){
