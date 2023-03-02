@@ -11,7 +11,7 @@ if (version_compare(PHP_VERSION, '7.0.0') < 0 ){
 }
 
 class Protector {
-	public $ver = '1.3.1';
+	public $ver = '1.3.2';
 	
 	public $variable;
 	public $function_name;	
