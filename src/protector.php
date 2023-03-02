@@ -1,5 +1,5 @@
 <?php
-namespace OmegaLolBro\HTMLSourceProtector;
+namespace Arnch7\HTMLSourceProtector;
 use \Exception;
 
 ini_set('memory_limit', '-1');
@@ -11,7 +11,7 @@ if (version_compare(PHP_VERSION, '7.0.0') < 0 ){
 }
 
 class Protector {
-	public $ver = '1.3';
+	public $ver = '1.3.1';
 	
 	public $variable;
 	public $function_name;	
@@ -77,9 +77,9 @@ class Protector {
 
 		$output  = '
 <!-------------------------------------------------------------------------------------------------------->
-<!-- HTML SourceProtector V' . $this->ver . '                                                                          -->
-<!-- Built by OmegaLolBro <https://github.com/OmegaLolBro/HTMLSourceProtector>                          -->
-<!-- Credits : OmegaLolBro, Arnav Chotkan                                                               -->
+<!-- HTML SourceProtector V' . $this->ver . '                                                                         -->
+<!-- Built by Arnch7 <https://github.com/OmegaLolBro/HTMLSourceProtector>                               -->
+<!-- Credits : Arnch7, Arnav Chotkan, AI32767                                                           -->
 <!-- This Website is protected against easy code stealing and malicious crawlers                        -->
 <!-------------------------------------------------------------------------------------------------------->
 '. "\n\n" . '
