@@ -35,7 +35,7 @@ $html->Encrypt();
 
 <-- Code written under here cannot be read by crawlers -->
 <?php
-require_once 'vendor/autoload.php';
+require_once 'vendor/autoload.php'; //Connect to Composer, Please edit to right composer directory!
 $html = new Html\Protector;
 ?>
 <html>
@@ -78,13 +78,13 @@ th, td {
 ```
 
 ## Issues
-If you come across any issues please report them [here](https://github.com/OmegaLolBro/HTMLSourceProtector/issues)
+If you come across any issues please report them [here](https://github.com/Arnch7/HTMLSourceProtector/issues)
 
 ## License
 ```
 MIT License
 
-Copyright (c) 2022 OmegaLolBro, AI32767, HTMLSourceProtector
+Copyright (c) 2023 Arnch7, AI32767, HTMLSourceProtector
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -103,3 +103,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+```
