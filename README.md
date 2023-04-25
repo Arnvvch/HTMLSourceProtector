@@ -77,7 +77,9 @@ th, td {
 </html>
 ```
 
-## Issues
+## Known Issues:
+* May throw issues when using ```include()``` or ```require()``` please use ```echo(file_get_contents('filename.php'));``` when using templates.
+
 If you come across any issues please report them [here](https://github.com/Arnch7/HTMLSourceProtector/issues)
 
 ## License
