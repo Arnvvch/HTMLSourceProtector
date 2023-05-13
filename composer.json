@@ -1,17 +1,13 @@
 {
-  "name": "omegalolbro/htmlsourceprotector",
+  "name": "arnchon/htmlsourceprotector",
   "description": "Protect your HTML source code.",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "stable",
   "authors": [
      {
-         "name": "OmegaLolBro",
-         "email": "omegalolbro@yandex.com"
-     },
-	 {
-         "name": "Arnav Chotkan",
-         "email": "chotkanarnav@yandex.com"
+         "name": "ArnchON",
+         "email": "chotkanarnav@pm.me"
      }
   ],
   "require": {
@@ -19,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OmegaLolBro\\HTMLSourceProtector\\": "src"
+      "ArnchON\\HTMLSourceProtector": "src"
     },    
 	"files": [
       "src/protector.php"

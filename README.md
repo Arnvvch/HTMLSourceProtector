@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">HTMLSourceProtector</h1>
+<h1 style="text-align:center;">HTMLSourceProtector V1.4</h1>
 <p align="center">
   <img src="assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
 </p>
@@ -20,24 +20,50 @@ The size of the first block of code depends on the size of web page, it contains
 ## Usage
  - To encrypt the whole page
  ```php
- <?php
-require_once 'vendor/autoload.php';
+<?php
 
-$html = new Html\Protector;
-$html->Encrypt();
+if(file_exists('vendor/autoload.php')){
+  require_once 'vendor/autoload.php';
+}
+
+if(file_exists('src/protector.php')){
+  require_once 'src/protector.php';
+}
+
+if(file_exists('protector.php')){
+  require_once 'protector.php';
+}
+
+$crypt = new ArnchON\HTMLSourceProtector\Crypt;
+$crypt->Start();
+
 ?>
 ```
 - To encrypt a part in a page
 ```php
-<-- Code written above the [$html = new Html\Protector;] line of code will not be encrypted-->
+<-- Code written above the [$html = new ArnchON\HTMLSourceProtector\Crypt;] line of code will not be encrypted-->
 <-- You can put code like AdSense verification code here so the crawlers can read it -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script>
 
 <-- Code written under here cannot be read by crawlers -->
 <?php
-require_once 'vendor/autoload.php'; //Connect to Composer, Please edit to right composer directory!
-$html = new Html\Protector;
+
+if(file_exists('vendor/autoload.php')){
+  require_once 'vendor/autoload.php';
+}
+
+if(file_exists('src/protector.php')){
+  require_once 'src/protector.php';
+}
+
+if(file_exists('protector.php')){
+  require_once 'protector.php';
+}
+
+$crypt = new ArnchON\HTMLSourceProtector\Crypt;
+
 ?>
+
 <html>
 <head>
 <style>
@@ -55,7 +81,7 @@ th, td {
 <h2>Table Caption</h2>
 <p>To add a caption to a table, use the caption tag.</p>
 
-<?php $html->Encrypt(); ?>
+<?php $crypt->Start(); ?>
 
 <table style="width:100%">
   <caption>Monthly savings</caption>
@@ -72,7 +98,7 @@ th, td {
     <td>$50</td>
   </tr>
 </table>
-<?php $html->EncryptionEnd(); ?>
+<?php $crypt->End(); ?>
 </body>
 </html>
 ```
@@ -86,7 +112,7 @@ If you come across any issues please report them [here](https://github.com/Arnch
 ```
 MIT License
 
-Copyright (c) 2023 Arnch7, AI32767, HTMLSourceProtector
+Copyright (c) 2023 ArnchON, AI32767, HTMLSourceProtector
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

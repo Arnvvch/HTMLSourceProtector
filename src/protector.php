@@ -10,8 +10,8 @@ if (version_compare(PHP_VERSION, '7.0.0') < 0 ){
 	throw new Exception('PHP 7.0 or greater is required');
 }
 
-class Protector {
-	public $ver = '1.3.2';
+class Crypt {
+	public $ver = '1.4';
 	
 	public $variable;
 	public $function_name;	
@@ -77,9 +77,9 @@ class Protector {
 
 		$output  = '
 <!-------------------------------------------------------------------------------------------------------->
-<!-- HTML SourceProtector V' . $this->ver . '                                                                         -->
-<!-- Built by Arnch7 <https://github.com/OmegaLolBro/HTMLSourceProtector>                               -->
-<!-- Credits : Arnch7, Arnav Chotkan, AI32767                                                           -->
+<!-- HTML SourceProtector V' . $this->ver . '                                                                        -->
+<!-- Built by ArnchON <https://github.com/ArnchON/HTMLSourceProtector>                                  -->
+<!-- Credits : ArnchON, Arnav Chotkan, AI32767                                                          -->
 <!-- This Website is protected against easy code stealing and malicious crawlers                        -->
 <!-------------------------------------------------------------------------------------------------------->
 '. "\n\n" . '
