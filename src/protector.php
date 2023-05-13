@@ -1,5 +1,5 @@
 <?php
-namespace Arnch7\HTMLSourceProtector;
+namespace ArnchON\HTMLSourceProtector;
 use \Exception;
 
 ini_set('memory_limit', '-1');
