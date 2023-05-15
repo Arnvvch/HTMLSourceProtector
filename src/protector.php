@@ -11,7 +11,7 @@ if (version_compare(PHP_VERSION, '7.0.0') < 0 ){
 }
 
 class Crypt {
-	public $ver = '1.4';
+	public $ver = '1.4.1';
 	
 	public $variable;
 	public $function_name;	
@@ -77,7 +77,7 @@ class Crypt {
 
 		$output  = '
 <!-------------------------------------------------------------------------------------------------------->
-<!-- HTML SourceProtector V' . $this->ver . '                                                                        -->
+<!-- HTML SourceProtector V' . $this->ver . '                                                                       -->
 <!-- Built by ArnchON <https://github.com/ArnchON/HTMLSourceProtector>                                  -->
 <!-- Credits : ArnchON, Arnav Chotkan, AI32767                                                          -->
 <!-- This Website is protected against easy code stealing and malicious crawlers                        -->

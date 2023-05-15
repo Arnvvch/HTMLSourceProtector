@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">HTMLSourceProtector V1.4</h1>
+<h1 style="text-align:center;">HTMLSourceProtector V1.4.1</h1>
 <p align="center">
   <img src="assets/logo.png?raw=true" width="350" title="HTMLSourceProtector">
 </p>
