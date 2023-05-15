@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ArnchON\\HTMLSourceProtector": "src"
+      "ArnchON\\HTMLSourceProtector\\": "src"
     },    
 	"files": [
       "src/protector.php"
